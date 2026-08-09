@@ -1,164 +1,165 @@
+// data/traData.ts
 import { ArchiveItem } from './index';
 
 export const TRA_DATA: ArchiveItem[] = [
   {
     id: "tra-01",
     category: "TRA",
-    title: "Between The Hedges - The Sacred Turf",
-    espnTitle: "The Emerald Ring: Why the Privet Hedges of Athens Are College Football’s Most Sacred Turf",
-    dateTag: "SANFORD STADIUM • THE SACRED TURF",
-    narrative: "In a sport obsessed with towering concrete facades and flashing digital billboards, the most intimidating boundary in American athletics is a living, breathing wall of English privet. Planted decades ago to encircle the playing surface, the hedges of Sanford Stadium have witnessed decades of glorious triumphs, agonizing defeats, and intense gridiron warfare. They are not merely decorative greenery; they represent a living guardian of tradition. Players know that when they crash through the green line, they are stepping onto one of the most hallowed and unforgiving pieces of earth in all of collegiate sports."
+    dateTag: "HISTORICAL RIVALRY • KNOXVILLE & TUSCALOOSA",
+    title: "The Third Saturday in October",
+    espnTitle: "The Blood Feud of Autumn: Why the Tennessee-Alabama Collision Remains a Sacred Tradition in Southern Football",
+    narrative: "Some rivalries are built on manufactured hype and conference realignment; others are forged in the scorching heat of historical hatred, where generations of players have left everything on the turf. Known across the American landscape simply as 'The Third Saturday in October,' the annual collision between Tennessee and Alabama is much more than a football game—it is a cultural reckoning that divides households, captures entire communities, and defines the SEC. From legendary coaches of the past to modern gladiators, this clash has always been defined by bone-crunching hits and an unyielding refusal to bow to the enemy. When these two titans step onto the gridiron under the autumn floodlights, the air crackles with more than a century of competitive history."
   },
   {
     id: "tra-02",
     category: "TRA",
-    title: "Sanford Stadium - The Cathedral in Athens",
-    espnTitle: "The Cathedral in the Valley: How Sanford Stadium Became the Holiest Ground in the South",
-    dateTag: "ATHENS, GEORGIA • THE CATHEDRAL",
-    narrative: "Some sports venues are hoisted high on concrete hillsides; Sanford Stadium was carved directly into a lush, red-clay ravine on the picturesque University of Georgia campus. Surrounded by towering pine trees and classic southern architecture, this magnificent colosseum creates an acoustic cauldron unlike any other in America. When ninety-plus thousand voices rise in unison, the noise reverberates off the hedges and shakes the valley floor, turning autumn Saturdays into an overwhelming spiritual experience for everyone fortunate enough to enter its gates."
+    dateTag: "OCTOBER 15, 2022 • NEYLAND STADIUM, KNOXVILLE",
+    title: "Breaking the Curse: The 2022 Alabama Thriller",
+    espnTitle: "The Kick Heard Round the World: How Chase McGrath and the 2022 Volunteers Shattered Fifteen Years of Heartbreak Against Bama",
+    narrative: "Some victories are comfortable blowouts that seal themselves by halftime; others are seismic cultural explosions fifteen years in the making. For nearly two decades, the crimson shadow of Alabama hung heavy over Knoxville, locking Tennessee in a seemingly endless cycle of heartbreaking defeats in their most cherished rivalry. That all shattered on a deafening October night in 2022, when Hendon Hooker, Jalin Hyatt, and a fearless Volunteer squad went blow-for-blow with the Crimson Tide in a frantic shootout. As time expired, kicker Chase McGrath drilled a game-winning field goal through the uprights, sending tens of thousands of screaming fans spilling onto the sacred turf, tearing down the goalposts, and restoring the roar to Rocky Top."
   },
   {
     id: "tra-03",
     category: "TRA",
-    title: "The Dawg Walk - Pre-Game Sacred Ritual",
-    espnTitle: "The Red River of Passion: The Dawg Walk and the Pre-Game Baptism of Athens",
-    dateTag: "PRE-GAME RITUAL • SANFORD DRIVE",
-    narrative: "Two hours before kickoff, long before the first whistle echoes across the turf, Sanford Drive turns into a roaring, suffocating ocean of red and black humanity. The Dawg Walk is the ultimate pre-game baptism, where players and coaches march shoulder-to-shoulder through a thick, cheering gauntlet of passionate fans. Fueled by the sound of the Redcoat Band and the collective heartbeat of Bulldog Nation, this sacred ritual bridges the gap between the stands and the gridiron, charging the team with an unstoppable wave of emotional energy before battle."
+    dateTag: "OCTOBER 19, 2024 • NEYLAND STADIUM, KNOXVILLE",
+    title: "The 2024 Knoxville Showdown",
+    espnTitle: "Smoke and Triumph: Inside the 2024 Second-Half Surge That Sent Alabama Back Down the Mountain",
+    narrative: "Some classic clashes are decided by early dominance; others require a gritty, gut-wrenching second-half transformation that tests the very soul of a fanbase. When the Crimson Tide marched into a packed, roaring Neyland Stadium in 2024, the Volunteers found themselves trapped in a sluggish, defensive slugfest through a scoreless opening half. But true to the modern resurgence under Josh Heupel, the team emerged from the locker room re-energized, executing clutch plays and suffocating defense to orchestrate a 24-17 masterpiece. As the final seconds ticked away, the familiar, sweet fragrance of victory cigars filled the East Tennessee air once more, signaling that Tennessee had restored belief that it could once again challenge the SEC elite."
   },
   {
     id: "tra-04",
     category: "TRA",
-    title: "Uga the Mascot Lineage",
-    espnTitle: "The Royal Dynasty of Athens: How the White English Bulldogs Became the Soul of Sanford Stadium",
-    dateTag: "MASCOT LINEAGE • THE WHITE ENGLISH BULLDOGS",
-    narrative: "In the aristocracy of college sports, kings and queens wear crowns, but the true royal family of Athens wears a spiked red collar and a custom white jersey. The Uga lineage of white English Bulldogs has served as the living symbol of Georgia football for generations, residing in supreme comfort in Savannah before holding court on an air-conditioned doghouse sideline in Sanford Stadium. From Uga I to the reigning monarch, these stoic, lovable champions capture the fierce loyalty, dignity, and indomitable spirit of the university."
+    dateTag: "1990S • KNOXVILLE & GAINESVILLE",
+    title: "The 1990s Florida Battles",
+    espnTitle: "The Swamp and the Smokies: Inside the High-Voltage Chess Match Between Tennessee and Florida for SEC East Supremacy",
+    narrative: "Some conference matchups are routine autumn fixtures; during the 1990s, the annual collision between Tennessee and Florida served as the ultimate gladiatorial arena of college football. Pitting legendary coaches and elite quarterbacks against one another, games between the Gators and the Volunteers regularly dictated the national championship picture. Every snap crackled with immense stakes, featuring elite arm talent, legendary receiver-cornerback duels, and packed stadiums hanging on every referee's whistle. It was a golden era of hostility that permanently etched orange-and-blue animosity into the modern lore of the SEC."
   },
   {
     id: "tra-05",
     category: "TRA",
-    title: "\"How 'Bout Them Dawgs!\" - Catchphrase",
-    espnTitle: "How ’Bout Them Dawgs: The Three-Word Battle Cry That Unified a Southern Empire",
-    dateTag: "NATIONAL CATCHPHRASE • THE BATTLE CRY",
-    narrative: "Some phrases are whispered in boardrooms; others are roared across parking lots, living rooms, and stadium concourses with a fierce, defiant swagger. 'How ’Bout Them Dawgs!' is more than a catchy rhetorical question—it is the ultimate exclamation point of southern sports pride. Whether uttered in stunned triumph after a miraculous last-second victory or shouted with celebratory swagger following an SEC title, these four words encapsulate the unshakeable confidence and collective joy of a fanbase that expects excellence."
+    dateTag: "HISTORICAL SEC RIVALRY • KNOXVILLE & ATHENS",
+    title: "The Border War with Georgia",
+    espnTitle: "The Red Clay Collision: Why the Border Clash Between Tennessee and Georgia Always Delivers Maximum Intensity",
+    narrative: "Some regional rivalries simmer quietly beneath the surface; the annual border war between Tennessee and Georgia is an unyielding collision of geographic pride, elite recruiting pipelines, and raw physical football. Separated by just a few hundred miles of winding Appalachian highway, the Volunteers and the Bulldogs have spent decades slugging it out in games where form charts are thrown out the window. Whether played under the searing heat of early September or the crisp chill of November, this SEC East showdown consistently demands maximum intensity, testing which program owns the trenches of the southern border."
   },
   {
     id: "tra-06",
     category: "TRA",
-    title: "The Chapel Bell Ringing",
-    espnTitle: "The Iron Voice of Victory: Why the Chapel Bell Tolls Across Athens",
-    dateTag: "CAMPUS TRADITION • THE CHAPEL BELL",
-    narrative: "When the final whistle blows in Sanford Stadium and another SEC victory is secured, a deep, resonant sound cuts through the southern evening air, rolling across North Campus and downtown Athens. The ringing of the historic Chapel Bell is a sacred post-game ritual performed by ecstatic students and fans who take turns pulling the heavy iron rope. For generations, this booming tradition has announced athletic triumphs to the entire community, turning every hard-fought victory into a shared, campus-wide celebration."
+    dateTag: "SEPTEMBER 19, 1998 • NEYLAND STADIUM, KNOXVILLE",
+    title: "The 1998 Overtime Survival Against Florida",
+    espnTitle: "The Doink Heard Round Knoxville: How a Missed Field Goal Propelled Tennessee Toward Immortality",
+    narrative: "Some championship paths are paved with smooth victories; others require walking through a terrifying psychological fire early in the autumn. For years, the Gators had served as a psychological barrier for the Volunteers, keeping national title dreams just out of reach. In September 1998, that barrier finally cracked in a heart-pounding overtime thriller inside a deafening Neyland Stadium. As Florida’s potential game-tying field goal sailed wide right, the stadium erupted in a cathartic tidal wave of sound. That single, breathless moment broke the curse, clearing the psychological runway for Tennessee’s historic, undefeated march to the national crown."
   },
   {
     id: "tra-07",
     category: "TRA",
-    title: "The Silver Britches",
-    espnTitle: "The Silver Britches: Metallic Armor and the Sharpest Look in College Football",
-    dateTag: "UNIFORM IDENTITY • THE SILVER BRITCHES",
-    narrative: "In an era when college football uniforms were standard, dull, and monotonous, a sharp aesthetic vision took hold in Athens to ensure players looked like literal champions. Introduced by Vince Dooley in the 1960s, the iconic 'Silver Britches' became an instant visual signature of Georgia football. Gleaming under the Saturday afternoon sun, these silver pants paired with crimson jerseys represent a timeless standard of class, toughness, and traditional aesthetic supremacy."
+    dateTag: "OCTOBER 14, 1995 • LEGION FIELD, BIRMINGHAM",
+    title: "The 1995 Peyton Manning Masterclass",
+    espnTitle: "The Day the Streak Died: How Sophomore Peyton Manning Dismantled Alabama in a Crimson-Stained Blowout",
+    narrative: "Some rivalry games are tightly contested, low-scoring chess matches; others are breathtaking statements of absolute offensive supremacy. In October 1995, a young sophomore phenom named Peyton Manning stepped onto the field at Legion Field with a mission to exorcise decades of historical frustration against the Crimson Tide. Operating with precise throws and surgical command, Manning picked apart the Alabama secondary with brilliant anticipation and pinpoint timing, leading the Volunteers to a stunning 41-14 rout. It wasn't just a regular-season victory; it was a cultural earthquake that signaled the end of a long, painful drought and the arrival of a modern passing revolution in Knoxville."
   },
   {
     id: "tra-08",
     category: "TRA",
-    title: "Red and Black - The Immortal Colors",
-    espnTitle: "Crimson Fire and Midnight Shadow: The Immortal Legacy of Red and Black",
-    dateTag: "VISUAL IDENTITY • THE CRIMSON & CHARCOAL",
-    narrative: "Colors in college football are more than aesthetic choices; they are tribal banners worn with fierce, unapologetic devotion. The combination of brilliant crimson red and deep, midnight black defines the visual identity of the University of Georgia. From the tailored suits worn by coaches to the sea of screaming partisans filling Sanford Stadium, these immortal colors create an aura of intimidation, tradition, and timeless elegance that strikes fear into opponents before a single play is run."
+    dateTag: "NOVEMBER 24, 2007 • NEYLAND STADIUM, KNOXVILLE",
+    title: "The Frozen Marathon: 2007 Kentucky Four-Overtime",
+    espnTitle: "The Frozen Marathon: How Tennessee Outlasted Kentucky in Brutal Freezing Conditions",
+    narrative: "Some football games are played under clear blue skies and gentle breezes; others are survival tests waged in surreal, freezing rain and brutal late-November cold that push human endurance to the brink. On a frigid afternoon in 2007, as numbing weather blanketed Neyland Stadium, Tennessee and Kentucky engaged in a historic, four-overtime defensive chess match. Through slippery footing and immense scoreboard pressure, the Volunteers dug deep into their institutional grit to make the plays that mattered most. When the dust finally settled, an exhausted but triumphant squad walked off the frozen turf with a victory that proved the program’s toughness could withstand the harshest elements of nature."
   },
   {
     id: "tra-09",
     category: "TRA",
-    title: "The Redcoat Marching Band",
-    espnTitle: "The Sound of the South: How the Redcoat Marching Band Orchestrates the Athens Symphony",
-    dateTag: "AUDIO CULTURE • THE SOUND OF SATURDAY",
-    narrative: "A college football game without a soundtrack is just a physical contest; with the Redcoat Marching Band, it becomes an emotional epic. From the soaring, triumphant notes of the pre-game fanfare to the soul-stirring rendition of 'Glory, Glory,' these talented musicians orchestrate the heartbeat of autumn Saturdays in Athens. Marching in precise formations through blazing heat and freezing cold, the Redcoats provide the acoustic soul that lifts the team and electrifies the stadium."
+    dateTag: "DECEMBER 6, 1997 • GEORGIA DOME, ATLANTA",
+    title: "The 1997 SEC Championship Triumph",
+    espnTitle: "The Atlanta Breakthrough: How Peyton Manning and the 1997 Volunteers Claimed the SEC Crown in a Shootout",
+    narrative: "Some teams wilt under the blinding lights of a conference championship game when facing a powerhouse opponent; historically, Tennessee’s path to SEC supremacy required conquering the neutral-site stage in Atlanta. In the 1997 SEC Championship Game, Peyton Manning and the Volunteers squared off against a high-powered Auburn team in a thrilling, high-scoring offensive masterclass. Trading blows through four quarters, Manning and the offense delivered clutch drives, securing a 30-29 victory that captured the program's first SEC title in over two decades and laid the concrete foundation for the national championship glory that followed immediately after."
   },
   {
     id: "tra-10",
     category: "TRA",
-    title: "The Pre-Game Trumpet Tradition",
-    espnTitle: "The Solitary Trumpet: The Pre-Game Note That Silences Ninety Thousand Voices",
-    dateTag: "MUSICAL TRADITION • PRE-GAME TRUMPET",
-    narrative: "Before the thunderous roar of the full marching band engulfs the stadium, moments before kickoff sends players crashing into each other, a singular sound pierces the air. A lone trumpeter steps forward in the hush of Sanford Stadium to play the haunting, beautiful opening notes that signal the imminent arrival of the Bulldogs. That solitary melody instantly silences ninety thousand screaming fans, creating an eerie, breathless moment of pure anticipation before the gridiron war begins."
+    dateTag: "HISTORICAL SEC RIVALRIES • NASHVILLE & LEXINGTON",
+    title: "The Eastern Division Grinders",
+    espnTitle: "The State Lines of Tennessee Football: How Grinding Division Battles Against Kentucky and Vanderbilt Kept the SEC Trenches Bloody",
+    narrative: "While national headlines focus on marquee matchups against blue-blood powerhouses, the true, grinding fabric of an SEC football season is tested in regional clashes against long-standing conference neighbors. For generations, annual end-of-season showdowns against Kentucky and in-state foe Vanderbilt have provided unique psychological hurdles for the Volunteers. Played against the backdrop of changing autumn leaves and closing division races, these games demand total focus, preventing trap-game upsets and keeping the historic regional pride of East Tennessee sharp against any challenger from the commonwealth or middle Tennessee."
   },
   {
     id: "tra-11",
     category: "TRA",
-    title: "The Arch Tradition",
-    espnTitle: "The Iron Law of the Arch: Why Every Georgia Student Walks Around the Sacred Gates",
-    dateTag: "NORTH CAMPUS • THE ARCH PASSAGE",
-    narrative: "On the edge of North Campus stands a pair of historic, ivy-laced iron gates known simply as The Arch—the solemn, physical threshold between academic pursuit and collegiate legend. According to university lore, undergraduate students must never walk directly underneath its central spans before earning their degree, lest graduation be permanently cursed. This unbreakable campus custom instills a deep, lifelong reverence for tradition, binding generations of students and alumni to the sacred soil of Athens."
+    dateTag: "POSTSEASON HISTORY • HISTORICAL JANUARY BOWLS",
+    title: "The January Glory Tradition",
+    espnTitle: "The Winter Stage: How Tennessee Forged Its Postseason Legend Under the Brightest January Bowl Lights",
+    narrative: "Some programs treat postseason bowl appearances as a casual vacation to cap off a year; historically, the Volunteers approached every major January bowl stage as a final, high-stakes battlefield to prove their national worth. From the historic orange-and-white invasions of sunny Florida and New Orleans to epic clashes against iconic western powerhouses, Tennessee’s postseason history is paved with iconic winter blockbusters. These games served as the ultimate annual validation for the VFL faithful, ensuring that every autumn campaign concluded with a final, thunderous statement of southern power on national television."
   },
   {
     id: "tra-12",
     category: "TRA",
-    title: "Sanford Stadium Expansions",
-    espnTitle: "From Ravine to Colosseum: The Architectural Evolution of Athens' Holy Valley",
-    dateTag: "STADIUM ARCHITECTURE • THE EXPANSION EPIC",
-    narrative: "Greatness cannot be contained in a small space; as the legend of Bulldog football expanded, so too must the stone and steel that housed it. Over the decades, Sanford Stadium has undergone a breathtaking architectural evolution—transforming from a modest, 30,000-seat natural ravine into a towering, magnificent double-decked colosseum holding over ninety-three thousand roaring fans. Yet, through every expansion and skybox addition, the sacred hedges and the intimate valley feel have remained perfectly preserved."
+    dateTag: "JANUARY 1, 1985 • NEW ORLEANS, LOUISIANA",
+    title: "The 1985 Sugar Bowl Destruction of Miami",
+    espnTitle: "The New Orleans Ambush: How Tennessee’s Defense Dismantled the Hurricanes in a Sugar Bowl Masterclass",
+    narrative: "Some bowl matchups are expected to be tight, high-scoring offensive showcases; others turn into shocking defensive statements that echo across the entire college football landscape. On New Year’s Day in 1985, the Volunteers stepped onto the Superdome turf as underdogs against a high-powered Miami Hurricanes squad loaded with future NFL stars. Instead of backing down, Johnny Majors’ defense orchestrated a masterpiece of calculated violence, intercepting passes, shutting down the run, and driving the Hurricanes to absolute despair in a resounding 35-7 rout. It was a seismic victory that announced Tennessee’s fierce return to the absolute peak of national college football."
   },
   {
     id: "tra-13",
     category: "TRA",
-    title: "The Bulldog Nation Tailgate Culture",
-    espnTitle: "Smoke, Silver, and Southern Hospitality: The Tailgate Symphony of Athens",
-    dateTag: "GAME-DAY RITUAL • MYERS QUAD & TAILGATING",
-    narrative: "Long before the first kickoff echoes across the red clay, the entire campus of the University of Georgia transforms into the world's most welcoming outdoor festival. Myers Quad, the academic lawns, and every shaded parking lot become a sprawling tailgate symphony filled with the scent of southern barbecue, the hum of generators, and the chatter of passionate alumni in crimson and black. It is a masterclass in southern hospitality, where strangers become instant family over shared food, drink, and football fervor."
+    dateTag: "ROAD WARRIOR TRADITION • SEC STADIUMS",
+    title: "The Road Warrior Code",
+    espnTitle: "Walking Into the Lion’s Den: How Iconic Road Victories Proved the Vol Army Carries Its Own Thunder",
+    narrative: "Some teams thrive only within the protective, deafening comfort of their home grandstands, crumbling the moment they step into hostile territory; true SEC greatness, however, is forged on the road. Throughout its storied history, Tennessee built an enviable reputation as a dangerous road warrior—whether stunning Notre Dame in South Bend, weathering storms in Death Valley, or executing flawless play-calling in opponent strongholds like Athens. The Volunteers repeatedly proved that a true VFL army carries its own thunder wherever it travels, capable of walking into terrifyingly loud environments and calmly dismantling the home team."
   },
   {
     id: "tra-14",
     category: "TRA",
-    title: "The Student Section & Sanford Noise",
-    espnTitle: "The Seismic Core: How the Student Section Turns Sanford Stadium Into a Torture Chamber",
-    dateTag: "STUDENT SECTION • SANFORD NOISE",
-    narrative: "Pushed right up against the historic hedges, packed shoulder-to-shoulder in a chaotic, deafening wave of red and black, lies the absolute psychological heartbeat of Sanford Stadium: the student section. Bouncing in unison, screaming until their voices fracture, and waving crimson shakers, these thousands of students create a hostile acoustic torture chamber for visiting quarterbacks. Their relentless, high-energy noise turns third downs into deafening nightmares and fuels the team's defensive dominance."
+    dateTag: "HOME-FIELD ADVANTAGE • NEYLAND STADIUM",
+    title: "The Neyland Effect",
+    espnTitle: "The Neyland Effect: How a Hundred Thousand Orange-Clad Souls Created College Football’s Most Intimidating Acoustic Trap",
+    narrative: "Some home-field advantages rely simply on numerical attendance; the environment inside Neyland Stadium operates as an active, living psychological phenomenon known to generations as the Neyland Effect. When the concrete bowl fills to the brim with over a hundred thousand passionate souls dressed in blazing orange, the sound doesn't just dissipate—it reverberates off the steep granddecks, creating a deafening wall of noise that shatters visiting snap counts. Combined with the crushing weight of history, it turns the opponent's offensive series into a chamber of absolute sensory overload, giving the Volunteers an unmatched psychological edge."
   },
   {
     id: "tra-15",
     category: "TRA",
-    title: "The Historic English Privet Hedges Propagation",
-    espnTitle: "Guarding the Green Line: The Secret Propagation and Protection of the Sacred Hedges",
-    dateTag: "SANFORD TURF • THE LIVING LEGACY",
-    narrative: "The English privet hedges surrounding Sanford Stadium are not merely plants; they are a living, breathing genetic dynasty carefully guarded by specialized groundskeepers. Whenever stadium expansions or turf renovations threaten their survival, cuttings are carefully propagated in secret greenhouses to ensure that the exact biological lineage remains unbroken. They are living witnesses to history, pruned and protected to ensure they look pristine for every single autumn battle on the red clay."
+    dateTag: "NOVEMBER 3, 2001 • SOUTH BEND, INDIANA",
+    title: "The 2001 Notre Dame Miracle",
+    espnTitle: "The 21-Point Escape: How Casey Clausen and the 2001 Volunteers Stunned Notre Dame in a Legendary South Bend Comeback",
+    narrative: "Some games are effectively decided when a team stumbles out of the gate and falls behind by a massive margin on the road; historically, writing off the Volunteers was a dangerous gamble. A masterclass in resilience unfolded in November 2001 inside a freezing Notre Dame Stadium, where Tennessee found themselves trailing the Fighting Irish by a staggering 21 points. Refusing to surrender, quarterback Casey Clausen engineered an astonishing, clinical comeback, picking apart the secondary to orchestrate a stunning 28-18 victory. It remains one of the most breathtaking second-half rescue missions in the storied annals of the program."
   },
   {
     id: "tra-16",
     category: "TRA",
-    title: "The Modern Sanford Light Show",
-    espnTitle: "The Constellation of Athens: How the Modern Light Show Transforms Sanford Stadium Into a Starry Abyss",
-    dateTag: "MODERN NIGHT GAMES • STADIUM SPECTACLE",
-    narrative: "When the sun dips below the rolling red-clay hills of Athens and the stadium lights cut through the autumn chill for a primetime showdown, Sanford Stadium undergoes a futuristic transformation. Synchronized LED stadium lights plunge the colosseum into total darkness before exploding into a dazzling, synchronized constellation of crimson laser flashes and pulsating fan phone lights. This modern sensory spectacle sends a jolt of pure adrenaline through the crowd, modernizing tradition while keeping the stadium's fierce intimidation factor intact."
+    dateTag: "RIVALRY WEEK • TRADITIONS",
+    title: "The Pre-Game Psychological Warfare",
+    espnTitle: "The Chess Before the War: Inside the Mental Combat and Band Warfare That Preceded Every Major SEC Clash",
+    narrative: "Some teams treat the week leading up to a major rivalry clash as a standard media routine; in the hyper-charged ecosystem of the SEC, rivalry week is an intense, psychological chess match. From subtle radio comments and fierce student body rallies to the majestic dominance of marching bands playing fight songs, every second before kickoff mattered. Tennessee's historic clashes against its fiercest enemies were always preceded by this invisible layer of tension, ensuring that by the time the players cleared the tunnel, the psychological battle was already halfway won."
   },
   {
     id: "tra-17",
     category: "TRA",
-    title: "\"Glory, Glory\" - The Immortal Fight Song",
-    espnTitle: "Glory, Glory to Old Georgia: The Anthem That Unifies Generations",
-    dateTag: "MUSICAL ANTHEM • GLORY, GLORY TO GEORGIA",
-    narrative: "Few melodies in American sport carry the heavy, emotional gravity of an entire university's generational memory. 'Glory, Glory to Old Georgia,' sung to the triumphant, marching cadence of the historic battle hymn, is the ultimate vocal expression of Bulldog devotion. When ninety thousand voices raise their arms and belt out the chorus after a touchdown, it transcends a mere sports tune—it becomes a sacred tribal prayer binding every past, present, and future student together in shared red-and-black glory."
+    dateTag: "NOVEMBER 14, 1998 • NEYLAND STADIUM, KNOXVILLE",
+    title: "The 1998 Arkansas Phantom Fumble",
+    espnTitle: "The Bounce of Fate: How Clint Stoerner’s Fumble and the 1998 Arkansas Miracle Kept National Championship Dreams Alive",
+    narrative: "Some championship seasons require a brush with absolute catastrophe before destiny is fulfilled. In November 1998, as an undefeated Tennessee squad marched toward history, they found themselves staring defeat in the face late in the fourth quarter against No. 10 Arkansas, trailing and desperately needing a miracle. In a flash of dramatic irony, Razorbacks quarterback Clint Stoerner tripped over his own lineman while trying to run out the clock, fumbling the football directly onto the Neyland Stadium turf. Recovered by the Volunteers, the stunning turnover sparked a game-winning touchdown drive, preserving the unblemished season and cementing one of the most fortuitous, unforgettable turns of fate in college football history."
   },
   {
     id: "tra-18",
     category: "TRA",
-    title: "Butts-Mehre Heritage Hall",
-    espnTitle: "The Shrine of Red and Black: Inside the Hall Where History Stares Back",
-    dateTag: "ATHLETIC HEADQUARTERS • THE SHRINE OF RED & BLACK",
-    narrative: "Tucked neatly into the heart of the athletic campus, Butts-Mehre Heritage Hall acts as the physical memory bank of Georgia athletics. Stepping inside its hallowed lobby is like walking through a living museum of glory, where glittering national championship trophies, Heisman memorabilia, and historical artifacts stare back at you from every angle. It is a daily reminder to every current student-athlete walking its corridors that they are carrying the heavy, honorable torch of a legendary athletic lineage."
+    dateTag: "SEC TRENCHES • PHYSICAL FOOTBALL",
+    title: "The War in the Trenches",
+    espnTitle: "The Mud and the Bone: How Tennessee’s Legendary Line-of-Scrimmage Wars Defined SEC Physicality",
+    narrative: "Some modern brands of football prioritize open-space speed and finesse; the historic heartbeat of Tennessee football has always been rooted in a brutal, bone-crunching line-of-scrimmage war. Built on the backs of legendary interior destroyers like Reggie White, John Henderson, and Albert Haynesworth, when the Volunteers met their classic rivals in the trenches, it wasn't just an athletic contest—it was a heavy-metal war of attrition where bodies ached and willpower was tested to its absolute limit. Surviving those physical wars required a rare breed of human being, cementing the program's proud identity as an incubator for terrifying interior dominance."
   },
   {
     id: "tra-19",
     category: "TRA",
-    title: "The Living Boundary of Sanford Stadium",
-    espnTitle: "The Living Boundary: How the Historic Hedges Shape the Architecture of Combat",
-    dateTag: "SANFORD TRADITION • THE GREEN LINE",
-    narrative: "In the codified architecture of college football, stadiums are defined by cold concrete and rigid steel, but in Athens, a living, leafy boundary commands a completely unique physical presence. The privet hedges create a tight, compact arena where fans feel almost close enough to touch the action on the field. This intimate proximity amplifies the psychological pressure on visiting teams, making Sanford Stadium feel less like an open athletic facility and more like a gladiatorial pit walled off by nature itself."
+    dateTag: "OCTOBER 9, 2004 • ATHENS, GEORGIA",
+    title: "The 2004 Georgia Escape",
+    espnTitle: "The Hedges Stunner: How Erik Ainge and a Gutsy Volunteer Squad Stunned Athens in a Classic SEC Border War",
+    narrative: "Some road trips into enemy territory end in overwhelming disaster when the home crowd hits peak volume; others become legendary testaments to poise under fire. In October 2004, the Volunteers traveled deep into Athens to face a powerhouse Georgia squad amidst a deafening sea of red and black. Refusing to buckle under the immense pressure between the historic hedges, freshman quarterback Erik Ainge and a gutsy Tennessee roster executed flawless situational football to pull off a stunning, hard-fought victory. It was a masterclass in road composure that reminded the conference that the orange and white could conquer any terrain."
   },
   {
     id: "tra-20",
     category: "TRA",
-    title: "The Red Clay Soul",
-    espnTitle: "The Red Clay Soul: Why Autumn Saturdays in Athens Are a Way of Life",
-    dateTag: "CULTURAL ESSENCE • THE RED CLAY SOUL",
-    narrative: "At the deepest core of Georgia football lies something that cannot be measured by recruiting stars, television contracts, or architectural renovations: the red clay soil of northeast Georgia. It is an intangible cultural essence that shapes the way people live, work, and breathe football in Athens. It breeds a quiet, rugged toughness, an unmatched sense of southern community, and an unshakeable pride. To understand the Bulldogs is to understand that football here isn't just a game played on Saturdays—it is the very pulse of the land."
+    dateTag: "HISTORICAL TURNING POINTS • SEC LANDSCAPE",
+    title: "The Volunteer Revival Moments",
+    espnTitle: "The Shifting Earth: How Historic Volunteer Resurgences Sparked Epic New Chapters in Knoxville",
+    narrative: "Conference hierarchies are never permanent; they are constantly resting on fragile fault lines waiting to be shattered by a rising power. Throughout its illustrious history, whenever external doubts peaked or historical droughts lingered, Tennessee would engineer sudden, violent uprisings that completely remapped its trajectory—from the defensive dominance of 1938 and the 1998 national championship surge to the electrifying modern breakthrough against Alabama in 2022. Those tectonic shifts weren't just isolated wins; they were institutional awakenings, proving that a dormant Tennessee giant always possesses the internal fire to reclaim its place at the pinnacle of the sport."
   }
 ];
