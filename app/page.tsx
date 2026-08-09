@@ -30,7 +30,7 @@ export default function Home() {
   const currentActualIndex = shuffledIndices[currentIndex];
   const currentItem: ArchiveItem = TENNESSEE_ARCHIVE_DATA[currentActualIndex];
 
-  // 智能提取：优先抓取年份/年代，无年份时提取 dateTag 首个核心词（如 ROAD、FALLL 等）
+  // 智能提取：优先抓取年份/年代，无年份时提取 dateTag 首个核心词
   const yearMatch = currentItem.dateTag.match(/\b(18\d{2}|19\d{2}|20\d{2})\b/i) || currentItem.title.match(/\b(18\d{2}|19\d{2}|20\d{2})\b/i);
   const decadeMatch = currentItem.dateTag.match(/\b(20\d{0,2}S|19\d{0,2}S)\b/i);
   const fallbackTag = currentItem.dateTag.split("•")[0].trim().split(" ")[0] || "VOLS";
@@ -71,7 +71,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-[#FF8200] text-white flex flex-col justify-between selection:bg-white selection:text-[#FF8200]">
+    <main className="min-h-screen bg-[#F77F00] text-white flex flex-col justify-between selection:bg-white selection:text-[#F77F00]">
       {/* 挂载自定义复古字体 AlfaSlabOne */}
       <style dangerouslySetInnerHTML={{ __html: `
         @font-face {
@@ -134,7 +134,7 @@ export default function Home() {
                 {currentItem.dateTag}
               </p>
               <div className="transform -rotate-1 mt-1">
-                <span className="block tracking-tight text-[36px] sm:text-[52px] leading-none text-[#FF8200] vintage-number drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)] uppercase break-words max-w-[300px]">
+                <span className="block tracking-tight text-[36px] sm:text-[52px] leading-none text-[#F77F00] vintage-number drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)] uppercase break-words max-w-[300px]">
                   {displayYear}
                 </span>
               </div>
@@ -155,7 +155,7 @@ export default function Home() {
             <div className="space-y-3">
               <button
                 onClick={handleNext}
-                className="w-full bg-[#FF8200] hover:bg-[#e07200] text-white font-serif font-bold tracking-widest text-xs uppercase py-3.5 transition-all duration-300 text-center rounded-none border border-black shadow-sm cursor-pointer"
+                className="w-full bg-[#F77F00] hover:bg-[#d66d00] text-white font-serif font-bold tracking-widest text-xs uppercase py-3.5 transition-all duration-300 text-center rounded-none border border-black shadow-sm cursor-pointer"
               >
                 NEXT CHAPTER IN TENNESSEE
               </button>
@@ -173,7 +173,7 @@ export default function Home() {
       </div>
 
       {/* 底部：无缝衔接 */}
-      <footer className="w-full bg-[#FF8200] pt-4 pb-6 px-4 text-center">
+      <footer className="w-full bg-[#F77F00] pt-4 pb-6 px-4 text-center">
         <div className="max-w-md mx-auto space-y-1">
           <p className="font-serif italic text-[10px] tracking-widest text-white/80 uppercase font-bold">
             NOTUSUAL EDITION • TENNESSEE
