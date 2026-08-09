@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { UGA_ARCHIVE_DATA, ArchiveItem } from "@/data";
+import { TENNESSEE_ARCHIVE_DATA, ArchiveItem } from "@/data";
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -9,7 +9,7 @@ export default function Home() {
 
   // 初始化：随机打乱内容索引池（洗牌算法）
   useEffect(() => {
-    const indices = Array.from({ length: UGA_ARCHIVE_DATA.length }, (_, i) => i);
+    const indices = Array.from({ length: TENNESSEE_ARCHIVE_DATA.length }, (_, i) => i);
     for (let i = indices.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [indices[i], indices[j]] = [indices[j], indices[i]];
@@ -28,18 +28,18 @@ export default function Home() {
 
   // 获取当前的档案项
   const currentActualIndex = shuffledIndices[currentIndex];
-  const currentItem: ArchiveItem = UGA_ARCHIVE_DATA[currentActualIndex];
+  const currentItem: ArchiveItem = TENNESSEE_ARCHIVE_DATA[currentActualIndex];
 
   // 智能提取当前事件的 4 位年份
   const yearMatch = currentItem.dateTag.match(/\b(18\d{2}|19\d{2}|20\d{2})\b/) || currentItem.title.match(/\b(18\d{2}|19\d{2}|20\d{2})\b/);
-  const displayYear = yearMatch ? yearMatch[0] : "1892";
+  const displayYear = yearMatch ? yearMatch[0] : "1900";
 
   // 点击下一篇：在洗牌池中前进；全部播完后自动重新洗牌
   const handleNext = () => {
     if (currentIndex < shuffledIndices.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else {
-      const indices = Array.from({ length: UGA_ARCHIVE_DATA.length }, (_, i) => i);
+      const indices = Array.from({ length: TENNESSEE_ARCHIVE_DATA.length }, (_, i) => i);
       for (let i = indices.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [indices[i], indices[j]] = [indices[j], indices[i]];
@@ -69,7 +69,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-[#ba0c2f] text-white flex flex-col justify-between selection:bg-white selection:text-[#ba0c2f]">
+    <main className="min-h-screen bg-[#FF8200] text-white flex flex-col justify-between selection:bg-white selection:text-[#FF8200]">
       {/* 挂载自定义复古字体 AlfaSlabOne */}
       <style dangerouslySetInnerHTML={{ __html: `
         @font-face {
@@ -88,13 +88,13 @@ export default function Home() {
       <header className="w-full pt-4 pb-2 px-4 text-center">
         <div className="max-w-md mx-auto space-y-0.5">
           <p className="tracking-[0.3em] uppercase text-[10px] text-white/70 font-light">
-            EST. 1892 • ARCHIVE DATABASE V1.0
+            EST. 1794/1891 • ARCHIVE DATABASE V1.0
           </p>
           <p className="tracking-[0.25em] uppercase text-xs text-white/90 font-medium">
             NOTUSUAL CREATIVE STUDIO
           </p>
           <p className="tracking-[0.2em] uppercase text-xs text-white/70 font-sans font-light">
-            UGA BULLDOGS FOOTBALL STORY
+            TENNESSEE VOLUNTEERS FOOTBALL STORY
           </p>
         </div>
       </header>
@@ -116,7 +116,7 @@ export default function Home() {
             <div className="absolute inset-0 z-0 grayscale contrast-150 brightness-90">
               <Image
                 src={randomBg}
-                alt="UGA Football Stadium Archive"
+                alt="Tennessee Volunteers Football Stadium Archive"
                 fill
                 className="object-cover object-center"
                 priority
@@ -132,7 +132,7 @@ export default function Home() {
                 {currentItem.dateTag}
               </p>
               <div className="transform -rotate-1 mt-1">
-                <span className="block tracking-tight text-[60px] sm:text-[85px] leading-none text-[#ba0c2f] vintage-number drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
+                <span className="block tracking-tight text-[60px] sm:text-[85px] leading-none text-[#FF8200] vintage-number drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
                   {displayYear}
                 </span>
               </div>
@@ -153,16 +153,16 @@ export default function Home() {
             <div className="space-y-3">
               <button
                 onClick={handleNext}
-                className="w-full bg-[#ba0c2f] hover:bg-[#960925] text-white font-serif font-bold tracking-widest text-xs uppercase py-3.5 transition-all duration-300 text-center rounded-none border border-black shadow-sm cursor-pointer"
+                className="w-full bg-[#FF8200] hover:bg-[#e07200] text-white font-serif font-bold tracking-widest text-xs uppercase py-3.5 transition-all duration-300 text-center rounded-none border border-black shadow-sm cursor-pointer"
               >
-                NEXT CHAPTER IN UGA
+                NEXT CHAPTER IN TENNESSEE
               </button>
 
               <button
                 onClick={handleShare}
                 className="w-full bg-white hover:bg-stone-100 text-stone-950 font-serif font-bold tracking-widest text-xs uppercase py-3.5 transition-all duration-300 text-center block rounded-none border border-black shadow-sm cursor-pointer"
               >
-                SHARE WITH THE UGA FAITHFUL
+                SHARE WITH THE VOL FAITHFUL
               </button>
             </div>
           </div>
@@ -171,13 +171,13 @@ export default function Home() {
       </div>
 
       {/* 底部：无缝衔接 */}
-      <footer className="w-full bg-[#ba0c2f] pt-4 pb-6 px-4 text-center">
+      <footer className="w-full bg-[#FF8200] pt-4 pb-6 px-4 text-center">
         <div className="max-w-md mx-auto space-y-1">
           <p className="font-serif italic text-[10px] tracking-widest text-white/80 uppercase font-bold">
-            NOTUSUAL EDITION • UGA
+            NOTUSUAL EDITION • TENNESSEE
           </p>
           <p className="font-serif italic text-xs text-white/90 leading-relaxed font-medium">
-            Love the vintage Georgia look? Grab our prints & goods.
+            Love the vintage Tennessee look? Grab our prints & goods.
           </p>
           <div>
             <a
@@ -191,7 +191,7 @@ export default function Home() {
           </div>
           <div className="pt-2 border-t border-white/10">
             <p className="text-[9px] tracking-widest uppercase text-white/50 font-semibold">
-              © UGA ARCHIVE DATABASE • NOTUSUAL CREATIVE
+              © TENNESSEE ARCHIVE DATABASE • NOTUSUAL CREATIVE
             </p>
           </div>
         </div>
