@@ -30,9 +30,10 @@ export default function Home() {
   const currentActualIndex = shuffledIndices[currentIndex];
   const currentItem: ArchiveItem = TENNESSEE_ARCHIVE_DATA[currentActualIndex];
 
-  // 智能提取当前事件的 4 位年份
-  const yearMatch = currentItem.dateTag.match(/\b(18\d{2}|19\d{2}|20\d{2})\b/) || currentItem.title.match(/\b(18\d{2}|19\d{2}|20\d{2})\b/);
-  const displayYear = yearMatch ? yearMatch[0] : "1900";
+  // 智能提取年份：支持 4 位年份 (18xx/19xx/20xx)、年代标签 (如 2020S)，无年份时优雅兜底显示 "VFL"
+  const yearMatch = currentItem.dateTag.match(/\b(18\d{2}|19\d{2}|20\d{2})\b/i) || currentItem.title.match(/\b(18\d{2}|19\d{2}|20\d{2})\b/i);
+  const decadeMatch = currentItem.dateTag.match(/\b(20\d{0,2}S|19\d{0,2}S)\b/i);
+  const displayYear = yearMatch ? yearMatch[0] : (decadeMatch ? decadeMatch[0] : "VFL");
 
   // 点击下一篇：在洗牌池中前进；全部播完后自动重新洗牌
   const handleNext = () => {
@@ -132,7 +133,7 @@ export default function Home() {
                 {currentItem.dateTag}
               </p>
               <div className="transform -rotate-1 mt-1">
-                <span className="block tracking-tight text-[60px] sm:text-[85px] leading-none text-[#FF8200] vintage-number drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
+                <span className="block tracking-tight text-[50px] sm:text-[75px] leading-none text-[#FF8200] vintage-number drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
                   {displayYear}
                 </span>
               </div>
