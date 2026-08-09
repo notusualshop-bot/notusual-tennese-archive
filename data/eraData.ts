@@ -1,204 +1,130 @@
-import { ArchiveItem } from './index';
+// data/eraData.ts
+export interface ArchiveItem {
+  dateTag: string;
+  title: string;
+  espnTitle: string;
+  narrative: string;
+}
 
 export const ERA_DATA: ArchiveItem[] = [
   {
-    id: "era-01",
-    category: "ERA",
-    title: "1892: The Dawn of the Gridiron in Athens",
-    espnTitle: "The Muddy Genesis: When Canvas Jackets and Raw Will Forged a Southern Religion",
-    dateTag: "JANUARY 30, 1892 • PIEDMONT PARK, ATLANTA",
-    narrative: "Some games are played for entertainment; others are born in the cold January mud of a winter afternoon to ignite a cultural religion. On a biting Saturday in 1892, shivering men in thick woolen canvas jackets stepped onto the swampy turf of Piedmont Park in Atlanta, carrying pigskins and raw determination. That inaugural clash against Georgia Tech birthed an eternal southern tradition, transforming university athletics from a casual pastime into a fierce, generational religion of red and black."
+    dateTag: "AROUND 1900 • KNOXVILLE, TENNESSEE",
+    title: "Around the Turn of the Century: The Birth of the Volunteer Identity",
+    espnTitle: "The Chosen Name: How an 1812 Battle Cry Forged the Immortal Identity of Tennessee Football",
+    narrative: "Some nicknames are cooked up by sportswriters in smoke-filled rooms; others are baptized in the history of regional service and worn like armor. Long before the forward pass revolutionized the sport or a hundred thousand voices shook the Neyland Stadium bleachers, the young men representing the Knoxville campus needed a banner worthy of their grit. Rooted deep in the state's storied legacy—drawing from the legendary volunteers who answered the call in the War of 1812—the title 'Volunteers' gradually took root around the turn of the 20th century. When those early squads ran onto the gridiron, they weren't just playing a collegiate pastime; they were carrying forward a fierce regional pride that transformed a regional college team into an enduring cultural institution."
   },
   {
-    id: "era-02",
-    category: "ERA",
-    title: "1920: The Point-a-Minute Wonder Team",
-    espnTitle: "The Point-a-Minute Avalanche: When Georgia Redefined Southern Offensive Power",
-    dateTag: "FALL 1920 • SANFORD FIELD, ATHENS",
-    narrative: "Great teams win with defense and discipline; historical juggernauts rewrite the scoreboard until the operators run out of numbers. In the roaring autumn of 1920, head coach Herman Stegeman unleashed a tactical avalanche known as the Point-a-Minute Wonder Team. Operating with dizzying speed, precision passing, and punishing ground attacks, these Bulldogs systematically humiliated opponents week after week, establishing an offensive standard of excellence that set the blueprint for modern collegiate football domination."
+    dateTag: "1889 • KNOXVILLE, TENNESSEE",
+    title: "1889: The Blooming of Orange and White",
+    espnTitle: "The Daisy Palette: When Mountain Blossoms Defined the Colors of a Dynasty",
+    narrative: "Some color schemes are chosen by corporate committees; others are pulled straight from the untamed soil by those who walked the campus hills. In the autumn of 1889, as the university's fledgling athletic squads prepared to clash with neighboring rivals, a unifying aesthetic was needed. According to campus lore, vibrant wild daisies blooming across the landscape inspired the selection of bright orange and crisp white. There were no sleek brand guidelines or high-tech merchandising departments—just a simple choice of colors plucked from the East Tennessee earth. When those early players pulled on their initial jerseys, they unknowingly locked in a visual identity that would one day turn Saturdays across the South into a blinding, magnificent sea of orange."
   },
   {
-    id: "era-03",
-    category: "ERA",
-    title: "1927: The Dream Team of 1927",
-    espnTitle: "The Dream Team of 1927: When Georgia Announced It Belonged",
-    dateTag: "FALL 1927 • YANKEE STADIUM & ATHENS",
-    narrative: "Under the autumn sky of legendary Yankee Stadium in the Bronx, a band of southern boys in red and black marched onto the grandest stage in American sport, completely unfazed by the bright lights and national media. The Dream Team of 1927 showcased a lethal blend of bruising line play and unstoppable backfield execution, dismantling northern powerhouses and proving beyond a shadow of a doubt that elite football excellence lived deep in the red-clay heart of Athens."
+    dateTag: "1953 • NEYLAND STADIUM, KNOXVILLE",
+    title: "1953: The Legend of Smokey and the Blue-Ticked Hound",
+    espnTitle: "The Howl of Rocky Top: When a Blue-Ticked Coonhound Became the Living Soul of Tennessee",
+    narrative: "Some mascots are born in corporate boardrooms; others walk out of the misty Appalachian mountains with a deep-throated bay and an unyielding spirit. In the autumn of 1953, amid soaring expectations and a campus-wide quest for a living symbol of gridiron toughness, the university held a contest that would alter its lore forever. Out of a sea of hopeful canines, a local blue-ticked coonhound owned by Reverend Bill Brooks stepped onto the field, barked in fierce defiance at a rival mascot, and instantly sent the packed stadium into a thunderous frenzy. Named 'Smokey' by the roaring student section, that first legendary hound didn't just wear a collar—he embodied the stubborn, proud pulse of the hills. Though generations have passed and the lineage has marched proudly from Smokey I to Smokey X, that original howl remains the eternal heartbeat of every Saturday afternoon in orange and white."
   },
   {
-    id: "era-04",
-    category: "ERA",
-    title: "1942: The First Consensus National Championship",
-    espnTitle: "The Pasadena Coronation: Frank Sinkwich, Charley Trippi, and the Night Athens Claimed America",
-    dateTag: "JANUARY 1, 1943 • ROSE BOWL, PASADENA",
-    narrative: "As the heavy, suffocating shadows of global war gripped a fractured nation, a band of fierce young men from red clay country crossed a continent by train, carrying the collective heartbeat of Athens to Southern California. On New Year's Day in 1943, inside a sun-drenched Rose Bowl, Frank Sinkwich and Charley Trippi orchestrated a masterclass of grit and offensive brilliance against UCLA. Crushing their opponents and hoisting the national championship trophy, they etched their names into immortality and claimed America's highest football crown."
+    dateTag: "THE FULMER ERA • KNOXVILLE, TENNESSEE",
+    title: "The Fulmer Era: The Popularization of the VFL Brotherhood",
+    espnTitle: "Vol For Life: The Unspoken Bond That Binds Every Legend in Orange",
+    narrative: "Some slogans are printed on t-shirts and forgotten by next season; others are forged in the scorching summer two-a-days and cemented in the trenches of SEC combat. Popularized during the golden years of the program under head coach Phil Fulmer, the mantra 'VFL'—Vol For Life—gradually evolved from a locker room phrase into an unshakeable spiritual contract. It transcended wins, losses, and the inevitable passage of time, declaring that once you bleed orange on the Knoxville turf, you belong to an eternal brotherhood. Whether you're a standout star playing under the Sunday night lights or an unsung walk-on who gave his Saturdays to the scout team, the title follows you forever. It is the invisible thread linking generations of players and fans, proving that while careers on the gridiron are fleeting, being a Vol is an eternity."
   },
   {
-    id: "era-05",
-    category: "ERA",
-    title: "1946: The Undefeated Sugar Bowl Triumph",
-    espnTitle: "The Post-War Crescendo: Charley Trippi and the Unblemished March in New Orleans",
-    dateTag: "JANUARY 1, 1947 • SUGAR BOWL, NEW ORLEANS",
-    narrative: "The confetti swirling inside New Orleans' Tulane Stadium on New Year's Day signaled far more than a post-holiday celebration; it was the thunderous homecoming of a football machine that refused to lose. Guided by the unmatched wizardry of Charley Trippi, the 1946 Bulldogs completed a flawless, undefeated march through the SEC and beyond. Bludgeoning opponents with relentless defense and high-octane offense, they cemented a golden post-war era that proved Georgia football was an indomitable national force."
+    dateTag: "1967 • THE BRYANTS & ROCKY TOP",
+    title: "1967: The Anthem of the Smoky Mountains",
+    espnTitle: "The Untamed Anthem: How a Banjo-Pickin' Mountain Tune Became the War Cry of Rocky Top",
+    narrative: "Some fight songs are cobbled together by academic committees with heavy brass and marching drums; others are born out in the wild, misty hills, driven by a high-lonesome banjo and a rebellious spirit. Written in 1967 by Felice and Boudleaux Bryant while cooped up in a Gatlinburg hotel room on a rainy afternoon, 'Rocky Top' was initially intended as a lighthearted country tune. But when the Pride of the Southland Band first unleashed its electrifying notes across the stands, a cultural lightning bolt struck Knoxville. It ceased to be merely a song; it became an irresistible, foot-stomping reflex for every soul in orange. Whenever the band strikes up those opening chords, tens of thousands of voices rise as one to howl at the East Tennessee mountains, transforming a simple country melody into the eternal war cry of a proud gridiron empire."
   },
   {
-    id: "era-06",
-    category: "ERA",
-    title: "1968: SEC Championship Breakthrough Under Dooley",
-    espnTitle: "The Architect's Foundation: Vince Dooley and the Breakthrough That Built Modern Athens",
-    dateTag: "NOVEMBER 30, 1968 • GRANT FIELD, ATLANTA",
-    narrative: "The autumn air crackled with a heavy, intense electricity in late 1968, as a young, cerebral head coach named Vince Dooley began reshaping the ultimate destiny of southern collegiate power. With a suffocating defense, disciplined execution, and an unshakeable belief in physical toughness, Dooley steered his Bulldogs through a gauntlet of conference powerhouses to capture the SEC crown. This watershed breakthrough wasn't just a single championship; it was the architectural cornerstone that built the modern, perennial powerhouse of Athens."
+    dateTag: "1960S • NEYLAND STADIUM, KNOXVILLE",
+    title: "1960s: The Rise of the Power T",
+    espnTitle: "The Sharp Edge of Tradition: How a Block Letter Became the Most Recognizable Insignia in the South",
+    narrative: "Some logos are born in high-end design agencies with focus groups and millions of dollars; others are carved out of necessity, simplicity, and raw authority over time. During the 1960s, as the program sought a crisp, commanding visual that would instantly represent the team, the iconic bold, tri-lined orange 'Power T' emerged as the primary helmet decal. It was clean, aggressive, and straightforward—a geometric declaration of intent stamped onto the side of the headgear. Without a single word, that letter communicated decades of hard-nosed tradition. Over the years, it evolved from a simple helmet symbol into an omnipresent cultural brand, stamped across billboards, painted on fields, and worn like a badge of honor by millions who bleed orange across the globe."
   },
   {
-    id: "era-07",
-    category: "ERA",
-    title: "1976: Vince Dooley’s Grit and the SEC Title Run",
-    espnTitle: "The Iron Will of ’76: How Dooley Forged a Championship Out of Pure Steel",
-    dateTag: "1976 SEASON • SEC CHAMPIONSHIP",
-    narrative: "There are seasons built on explosive, high-wire offense, and then there are campaigns forged in the bone-crushing furnace of pure defensive survival. In 1976, Vince Dooley’s Bulldogs mastered the art of winning ugly, relying on suffocating defense, mistake-free football, and an ironclad mental toughness that broke the spirit of every opponent. Grinding out hard-fought victories week after week across a brutal SEC schedule, they captured the conference crown through sheer willpower, proving that grit and discipline remain the ultimate championship currency."
+    dateTag: "1960S-PRESENT • TENNESSEE RIVER, KNOXVILLE",
+    title: "1960s-Present: The Fleet That Conquered the Tennessee River",
+    espnTitle: "The Floating Tailgate: How the Vol Navy Turned the Tennessee River Into a College Football Sanctuary",
+    narrative: "Some tailgates are anchored to asphalt parking lots and concrete lots; others ride the rolling currents of the Tennessee River to forge a spectacle unlike anything else in sports. Beginning in the 1960s, fans looking to bypass the gridlock of land traffic started piloting boats directly up to the stadium, mooring near the shoreline just a stone's throw from the gates. What began as an eccentric shortcut rapidly mutated into an unyielding tradition of epic proportions. Soon, hundreds of luxury yachts, fishing boats, and makeshift watercraft—christened the 'Vol Navy'—began packing the river every autumn Saturday, turning the water into a floating sea of orange smoke, grilling ribs, and echoing fight songs. It stands today as college football’s most majestic ritual, where maritime navigation meets the holy obsession of SEC football."
   },
   {
-    id: "era-08",
-    category: "ERA",
-    title: "1980: The Undefeated National Championship Season",
-    espnTitle: "The Freshman Earthquake: Herschel Walker and the Night New Orleans Shook",
-    dateTag: "JANUARY 1, 1981 • SUGAR BOWL, NEW ORLEANS",
-    narrative: "The Louisiana Superdome on New Year’s Night in 1981 was a deafening cauldron of blue-and-gold Notre Dame faithful, but a freshman with thighs like tree trunks was about to rewrite college football history. Herschel Walker, carrying a battered shoulder and an entire state's expectations, battered the Fighting Irish defense with relentless power. Securing the 17-10 victory, the Bulldogs completed a pristine, undefeated season, capturing the national championship and awakening a sleeping red-and-black giant."
+    dateTag: "GENERATIONAL TRADITION • KNOXVILLE & TUSCALOOSA",
+    title: "The Tradition of Cigar Celebrations",
+    espnTitle: "Smoke in the Air: The Smoldering Tradition That Marks Tennessee's Biggest Victories",
+    narrative: "Some rivalries are celebrated with handshakes and polite applause; others require thick tobacco smoke, roaring crowds, and a tradition wrapped in absolute triumph. Over generations, cigar celebrations became closely associated with Tennessee's most high-stakes victories, particularly against historic rivals. When the final whistle sounds and the victors stand tall, the locker room and the field frequently erupt in the fragrant, heavy smoke of premium cigars. Though the exact origins of how the practice started are shrouded in lore, it evolved into an open, mandatory badge of conquest. When the Volunteers conquer their ultimate southern nemesis, the thick blue smoke billowing under the autumn night sky signals to the entire conference that the king of the hill has changed."
   },
   {
-    id: "era-09",
-    category: "ERA",
-    title: "1981: Securing Back-to-Back SEC Crowns",
-    espnTitle: "Defending the Throne: The Heavyweight March to Back-to-Back SEC Titles",
-    dateTag: "1981 SEASON • SEC CROWN DEFENSE",
-    narrative: "Reaching the summit is a monumental achievement; defending it while a pack of hungry wolves circles your throne is an entirely different kind of war. In 1981, with a massive target painted squarely on their red-and-black jerseys, the Bulldogs faced every conference opponent's absolute best shot. Powered by Herschel Walker's relentless rushing and a defense that refused to bend under pressure, Georgia fought through the smoke and noise to secure back-to-back SEC championships, proving their elite status was no fluke."
+    dateTag: "HISTORICAL TRADITION • NEYLAND STADIUM, KNOXVILLE",
+    title: "The Legend of the Disappearing Goalposts",
+    espnTitle: "The Steel and the River: The Legend of When the Goalposts Take a Swim in Knoxville",
+    narrative: "Some victories are commemorated with a quiet trophy presentation in a glass case; others are immortalized when an entire stadium of ecstatic humanity rips heavy steel out of the ground. In the wildest corners of college football lore, few images rival the sheer, chaotic ecstasy of a Tennessee upset. According to enduring game-day legend and local lore, whenever the Volunteers toppled a giant, the roaring student section refused to let the celebration stay contained within the brick walls. Swarming the turf like a tidal wave, fans would occasionally tear down the goalposts, hoist the massive yellow metal beams onto their shoulders, and parade them through the streets of Knoxville toward the banks of the Tennessee River—where the hardware would take a ceremonial swim. It remains a legendary manifestation of pure, unfiltered passion."
   },
   {
-    id: "era-10",
-    category: "ERA",
-    title: "1982: The Sugar Bowl No. 1 Ranking Battle",
-    espnTitle: "The New Orleans Crucible: Chasing Immortality on New Year’s Night",
-    dateTag: "JANUARY 1, 1983 • SUGAR BOWL, NEW ORLEANS",
-    narrative: "The air inside the Louisiana Superdome on the first night of 1983 crackled with the heavy, unyielding electricity of a destiny waiting to be claimed. Entering the Sugar Bowl ranked No. 1 in the nation with a chance to seal a second consensus national title in three years, the Bulldogs collided head-on with a ferocious Penn State squad. In a game defined by brutal collisions and fierce tactical chess moves, Georgia fought until the final whistle, leaving an indelible mark on an era defined by gold-standard excellence."
+    dateTag: "1921-PRESENT • NEYLAND STADIUM, KNOXVILLE",
+    title: "Neyland Stadium and the 100,000-Seat Crucible",
+    espnTitle: "The Concrete Cauldron: Why Neyland Stadium Became a Terrifying Nightmare for Visiting Teams",
+    narrative: "Some venues are polite architectural marvels designed for quiet appreciation; others are steep-walled concrete crucibles engineered to shatter the nerves of any opponent. Situated right along the riverbanks, Neyland Stadium grew from a modest athletic field into a colossal, towering coliseum capable of swallowing over 100,000 screaming souls in a sea of blinding orange. Designed with high, steep upper decks that trap sound like a thundercloud, the stadium transforms into an acoustic nightmare for opposing offenses. Fans have long joked that the press box literally sways when the crowd hits peak volume. For nearly a century, it has remained the ultimate hostile territory—a place where visiting teams don't just fight an opponent across the line of scrimmage, they fight the crushing, overwhelming weight of history itself."
   },
   {
-    id: "era-11",
-    category: "ERA",
-    title: "2002: The SEC Championship Redemption",
-    espnTitle: "The Weight Off the Shoulders of Athens: Breaking the Two-Decade SEC Drought",
-    dateTag: "DECEMBER 7, 2002 • GEORGIA DOME, ATLANTA",
-    narrative: "Twenty long years is a generation in college football—long enough for children to grow up hearing stories of past glories while watching their beloved Bulldogs stumble in high-stakes November games. But in December 2002, under the gleaming white roof of the Georgia Dome, head coach Mark Richt and a ferocious team of destiny exorcised the ghosts of the past. Dismantling Arkansas in the SEC Championship Game, they shattered a twenty-year conference title drought, lifting a crushing psychological weight off the entire city of Athens."
+    dateTag: "1932 • SOUTHEASTERN CONFERENCE",
+    title: "1932: Founding the SEC Battleground",
+    espnTitle: "The Architectural Pillars: How Tennessee Forged the Identity of the Southern Conference from Day One",
+    narrative: "Some conferences are born out of modern television deals and administrative realignments; others were carved out of the raw, red-clay battlegrounds of the American South. In 1932, when athletic leaders gathered to break away from the sprawling Southern Intercollegiate Athletic Association and form the elite Southeastern Conference, the University of Tennessee stood right at the epicenter of the movement. They weren't just joining a new league—they were helping to author the code of combat for the most culturally significant football conference in the nation. From the very first kickoff under this new banner, the Volunteers established themselves as a standard-bearer of grit, setting a tone that would turn autumn Saturdays into a holy ritual across Dixie."
   },
   {
-    id: "era-12",
-    category: "ERA",
-    title: "2012: The Five-Yard Revolution",
-    espnTitle: "The Five-Yard Revolution That Almost Changed Everything",
-    dateTag: "DECEMBER 1, 2012 • GEORGIA DOME, ATLANTA",
-    narrative: "Some football games are contests; others are seismic clashes that define an entire epoch of a conference. Inside a deafening Georgia Dome, Georgia and Alabama squared off in an unforgettable SEC Championship Game that served as a de facto national semifinal. With Aaron Murray slinging passes and Todd Gurley tearing through gaps, the Bulldogs drove downfield in the game's dying seconds, needing just five yards to shock the world. Though time expired just short of the end zone, that single afternoon proved Georgia stood on the absolute precipice of modern dynasty."
+    dateTag: "1926-1952 • NEYLAND STADIUM, KNOXVILLE",
+    title: "The General: Robert Neyland's Ironclad Legacy",
+    espnTitle: "The Architect of Discipline: How General Robert Neyland Forged the DNA of Tennessee Football",
+    narrative: "Some coaches are remembered for their charismatic play-calling or flashy sideline antics; others are etched into eternity as cold, calculating military minds who treated the gridiron like a strategic battlefield. General Robert Neyland didn't just coach the Volunteers across multiple stints spanning three decades; he engineered an entire institution based on precision, discipline, and relentless execution. Operating with the mindset of a West Point tactician, he demanded that his players master the fundamentals until perfection became second nature. Under his watch, Tennessee transformed into a national powerhouse, accumulating SEC titles and national prestige while proving that games are won through ruthless attention to detail. His legacy still hovers over the stadium that bears his name."
   },
   {
-    id: "era-13",
-    category: "ERA",
-    title: "2017: Rose Bowl Thriller & National Title Ascent",
-    espnTitle: "Twilight in Pasadena: The Overtime Epic That Awakened a Sleeping Giant",
-    dateTag: "JANUARY 1, 2018 • ROSE BOWL, PASADENA",
-    narrative: "The fading California sunset cast a golden hue over the historic Rose Bowl as two iconic programs traded haymakers in a double-overtime postseason spectacle for the ages. Sony Michel's breathtaking walk-off touchdown run capped off a game of pure momentum swings and unforgettable collegiate theater, sending the Bulldogs sprinting onto the grandest national championship stage. It was the night Kirby Smart's vision fully materialized, proving that the red-and-black empire had officially arrived at the pinnacle of modern college football."
+    dateTag: "1938 • REGULAR SEASON, KNOXVILLE",
+    title: "1938: The Regular Season Iron Wall",
+    espnTitle: "The Ghosts of Autumn: Inside the 1938 Regular Season When Tennessee's Defense Refused to Break",
+    narrative: "Some great teams are celebrated for lighting up the scoreboard with video-game offensive numbers; others achieve legendary status by building a defensive fortress that leaves every opponent broken. In the fall of 1938, General Neyland unleashed a squad that defied conventional logic. Across an entire punishing regular season, the Volunteer defense pitched shutout after shutout, marching through opponents with a suffocating, bone-crunching brutality that didn't allow a single regular-season point. While the modern game worships high-flying offenses, the 1938 regular-season team remains the gold standard of defensive terror—a squad of hardened men who turned every Saturday into a masterclass in resistance."
   },
   {
-    id: "era-14",
-    category: "ERA",
-    title: "2021: The Defensive Immortality Season",
-    espnTitle: "The Red-and-Black Swarm: The Season Defense Reclaimed Its Throne",
-    dateTag: "FALL 2021 • SANFORD STADIUM & SEC BATTLEGROUNDS",
-    narrative: "There are defenses that stop opponents, and then there are units that completely rewrite the laws of physics, intimidation, and statistical dominance. In 2021, Kirby Smart orchestrated a defensive masterpiece built on historic speed, suffocating line play, and an unrelenting swarm mentality. From the opening weekend in Charlotte to the regular-season demolition of every SEC opponent in their path, this unit terrorized quarterbacks and left opposing offenses broken in their wake, carrying the program toward an era of absolute immortality."
+    dateTag: "HISTORICAL ROOTS • EAST TENNESSEE HILLS",
+    title: "The Spirit of the Volunteer",
+    espnTitle: "Beyond the Chalk Lines: How the Creed of the Mountain State Infused a Football Team with Soul",
+    narrative: "Some names are corporate marketing choices born in quiet boardrooms; others are inherited from the blood, sweat, and sacrifice of ancestors who answered history's call. The spirit defining Tennessee football is inextricably linked to the rugged identity of the East Tennessee hills—a place where self-reliance, community, and courage form the bedrock of daily life. When those early generations of student-athletes strapped on their leather helmets, they weren't merely playing for a university diploma; they were carrying the weight of a proud regional heritage that valued grit above comfort. That ethos became the invisible armor of the program, ensuring that no matter how steep the deficit, a true Vol would always answer the bell."
   },
   {
-    id: "era-15",
-    category: "ERA",
-    title: "January 10, 2022: The 41-Year Drought Broken",
-    espnTitle: "When the Clock Stopped Hurting: Exorcising Four Decades of Ghosts in Indy",
-    dateTag: "JANUARY 10, 2022 • LUCAS OIL STADIUM, INDIANAPOLIS",
-    narrative: "For forty-one agonizing years, January in Athens carried the bitter, lingering taste of 'what if.' Under the artificial roof in Indianapolis, facing their ultimate boogeyman in Alabama, the Bulldogs stood at the crossroads of history. When Kelee Ringo intercepted a pass in the game's dying moments and sprinted seventy-nine yards down the sideline, the clock finally stopped hurting. The 41-year championship drought was shattered into a million pieces, and a legendary new dynasty was officially born."
+    dateTag: "ROAD WARRIOR ERA • SEC STADIUMS",
+    title: "The Orange Army on Foreign Soil",
+    espnTitle: "The Bleeding Horizon: How the Traveling Orange Army Claimed Hostile Stadiums",
+    narrative: "Some fanbases travel in quiet whispers, hoping to blend into the enemy's grandstands; others arrive like an invading tide, painting hostile territory in blinding orange. Whenever the Volunteers hit the road to battle conference rivals, a massive contingent of faithful fans follows. Packing highways, flights, and parking lots, they transform away games through sheer vocal power and visual dominance. When the Pride of the Southland Band echoes through unfamiliar concrete bowls, and the visiting stands erupt in a synchronized roar, the home team realizes they aren't just playing eleven men on the field—they are fighting an entire culture that has crossed state lines."
   },
   {
-    id: "era-16",
-    category: "ERA",
-    title: "The Wally Butts Empire",
-    espnTitle: "The Wally Butts Empire: Building Georgia's First National Power",
-    dateTag: "1939–1960 SEASONS • ATHENS, GEORGIA",
-    narrative: "Before modern television deals and multi-million dollar facilities, there was a visionary football mastermind who transformed a sleepy southern campus into a national powerhouse. Wally Butts, pacing the sidelines with his trademark intensity, introduced innovative passing concepts and recruited legendary athletic freaks like Frank Sinkwich and Charley Trippi. Over two decades of fierce competition, Butts laid the deep, unbreakable foundation of winning culture, proving that Athens was a place where national legends were forged."
+    dateTag: "HISTORICAL RIVALRY • KNOXVILLE & TUSCALOOSA",
+    title: "The Third Saturday in October",
+    espnTitle: "The Blood Feud of Autumn: Why the Tennessee-Alabama Collision Remains a Sacred Tradition in Southern Football",
+    narrative: "Some rivalries are built on manufactured hype and conference realignment; others are forged in the scorching heat of historical hatred, where generations of players have left everything on the turf. Known across the American landscape simply as 'The Third Saturday in October,' the annual collision between Tennessee and Alabama is much more than a football game—it is a cultural reckoning that divides households, captures entire communities, and defines the SEC. From legendary coaches of the past to modern gladiators, this clash has always been defined by bone-crunching hits and an unyielding refusal to bow to the enemy. When these two titans step onto the gridiron under the autumn floodlights, the air crackles with more than a century of competitive history."
   },
   {
-    id: "era-17",
-    category: "ERA",
-    title: "The Modern Kirby Smart Culture Revolution",
-    espnTitle: "The Elite Standard: How Kirby Smart Forged an Incorruptible Culture",
-    dateTag: "2016–PRESENT • SANFORD STADIUM",
-    narrative: "Programs don't win back-to-back national titles by accident; they are built from the ground up by a maniacal commitment to an unrelenting standard of excellence. When Kirby Smart returned to his alma mater in 2016, he didn't just rebuild the roster—he rewired the program's psychological DNA. Demanding unmatched physical toughness, complete accountability, and selfless team unity, Smart created an infallible culture where complacency is forbidden and elite performance is simply the baseline expectation."
+    dateTag: "1921-PRESENT • NEYLAND STADIUM, KNOXVILLE",
+    title: "The Historic Echoes of Neyland Stadium",
+    espnTitle: "The House That History Built: How a Modest Field Evolved Into a Monumental Citadel of Orange",
+    narrative: "Some stadiums are sterile modern arenas built yesterday and forgotten tomorrow; others are sacred cathedrals of concrete and steel, layered with decades of triumphs and heartbreaks. Long before it towered over the Tennessee River as a colossal 100,000-seat amphitheater, the site of Neyland Stadium began as a modest patch of earth known as Shield-Watkins Field. As the program grew under General Neyland and captured the imagination of the state, the stands rose higher, transforming the venue into a monolithic temple of college football. Every brick and beam holds the echoes of legendary clashes, making it a living museum where the past and present collide every single Saturday in the fall."
   },
   {
-    id: "era-18",
-    category: "ERA",
-    title: "2017-2022: From Contender to Champion",
-    espnTitle: "The Climb: How Smart Transformed Georgia from Contender to Apex Predator",
-    dateTag: "2017–2022 SEASONS • SEC BATTLEGROUNDS",
-    narrative: "Building a championship contender is difficult; crossing the final threshold to become the undisputed apex predator requires changing a program's psychological DNA. Through elite recruiting classes, unmatched tactical preparation, and a culture that punished complacency, Kirby Smart systematically closed the gap on college football's Mount Olympus. The heartbreaking near-misses of 2017 and 2018 were transformed into the unyielding steel of 2021 and 2022, completing one of the most methodical and complete transformations in the history of the sport."
+    dateTag: "MODERN TRADITION • GLOBAL VFL COMMUNITY",
+    title: "The Secret Language of the VFL",
+    espnTitle: "The Silent Passcode: How Three Simple Letters Became an International Passport for Every True Tennessee Soul",
+    narrative: "Some fandoms are united by fleeting trends and temporary loyalties; others are bound by an unbreakable, lifelong creed that transcends geography, generation, and time itself. When two strangers cross paths in a bustling airport terminal, a foreign city street, or a quiet coffee shop thousands of miles away from Knoxville, a subtle glance at an orange hat or a casual nod can prompt the exchange of three magical letters: 'VFL.' It stands for Vol For Life—an unwritten pact forged in the sweat of summer practices and the roar of autumn Saturdays. It transforms a scattered diaspora of alumni and fans into an instant family, proving that you never truly leave the orange brotherhood."
   },
   {
-    id: "era-19",
-    category: "ERA",
-    title: "1996–2000: The Jim Donnan Offensive Revolution",
-    espnTitle: "Air Raid in Red and Black: The Jim Donnan Offensive Revolution",
-    dateTag: "1996–2000 SEASONS • SANFORD STADIUM",
-    narrative: "By the mid-1990s, college football was accelerating into a high-octane, pass-happy era, and traditional powerhouses had to adapt or get left behind. Head coach Jim Donnan brought an explosive, wide-open offensive philosophy to Athens, arming legendary playmakers like Hines Ward, Champ Bailey, and a record-breaking passing machine with the tools to slice through SEC secondaries. This high-flying aerial revolution modernized Georgia's identity, electrifying Sanford Stadium and proving the Bulldogs could win with breathtaking offensive fireworks."
+    dateTag: "FALL SATURDAYS • EAST TENNESSEE",
+    title: "The Sacred Rite of the Knoxville Autumn",
+    espnTitle: "Smoke, Bourbon, and Pigskin: The Sensory Symphony That Transforms East Tennessee Every October",
+    narrative: "Some regions experience autumn as a quiet transition of falling leaves and cooling weather; in East Tennessee, autumn is a full-scale sensory explosion governed by the absolute laws of college football. As the mountain air turns crisp and the hillsides catch fire with amber foliage, the entire rhythm of life in Knoxville pivots toward Saturday afternoon. The scent of hickory wood smoke from tailgates, the sharp aroma of southern barbecue, and the distant rumble of the Pride of the Southland Band tuning up create a unique cultural atmosphere. It is a time-honored rhythm where community, family, and fierce athletic passion merge into a single, beautiful way of life."
   },
   {
-    id: "era-20",
-    category: "ERA",
-    title: "2023: The Historic 29-Winning Streak Peak",
-    espnTitle: "The 29-Game Summit: The Peak of Modern Collegiate Consistency",
-    dateTag: "2021–2023 SEASONS • THE SEC LANDSCAPE",
-    narrative: "Winning a championship is rare; winning two in a row is elite. But stacking victory after victory across three calendar years to reach an astonishing 29-game winning streak is a testament to historic athletic discipline. Facing every opponent's absolute best effort week after week, Kirby Smart's Bulldogs marched through SEC battlegrounds with chilling consistency. This unprecedented multi-year streak etched the 2021-2023 teams into the pantheon of college football's greatest modern dynasties."
-  },
-  {
-    id: "era-21",
-    category: "ERA",
-    title: "2005: The D.J. Shockley SEC Title Masterclass",
-    espnTitle: "The Waiting Masterpiece: D.J. Shockley’s Night in the Georgia Dome",
-    dateTag: "DECEMBER 3, 2005 • GEORGIA DOME, ATLANTA",
-    narrative: "For years, D.J. Shockley stood patiently in the long, formidable shadow of David Greene, serving as the ultimate understudy before his moment finally arrived. In December 2005, stepping onto the grand stage of the Georgia Dome for the SEC Championship Game against LSU, Shockley delivered a masterpiece of poise, athleticism, and pinpoint passing. Tearing through the Tiger defense with both his arm and legs, he secured a resounding victory and cemented his legacy as one of Athens' most beloved and resilient field generals."
-  },
-  {
-    id: "era-22",
-    category: "ERA",
-    title: "The Warning Shot: 2019 Sugar Bowl",
-    espnTitle: "The Warning Shot: The Sugar Bowl That Hardened Kirby's Dawgs",
-    dateTag: "JANUARY 1, 2019 • MERCEDES-BENZ SUPERDOME, NEW ORLEANS",
-    narrative: "New Orleans on New Year’s Day hummed with a restless energy, but inside the Superdome, the Georgia Bulldogs arrived carrying the heavy hangover of a heartbreaking postseason near-miss. Stumbling against Texas in a physical, emotionally flat Sugar Bowl performance served as a brutal, sobering wake-up call for Kirby Smart's program. Rather than breaking the team's spirit, that bitter defeat acted as an intense metallurgical furnace—forging the hard-nosed, unforgiving psychological edge required to ultimately conquer the national mountain in the years that followed."
-  },
-  {
-    id: "era-23",
-    category: "ERA",
-    title: "January 9, 2023: The 65-7 National Dynasty",
-    espnTitle: "Absolute Dominion: The Night the Dawgs Rewrote the History Books in LA",
-    dateTag: "JANUARY 9, 2023 • SOFI STADIUM, LOS ANGELES",
-    narrative: "Under the blinding, futuristic lights of SoFi Stadium in Los Angeles, the Georgia Bulldogs didn't just play for a national title; they hosted an absolute masterclass in athletic supremacy. Demolishing TCU by a jaw-dropping 65-7 margin, Stetson Bennett and a suffocating roster played with a ruthless, flawless precision from opening kickoff to final whistle. It was the ultimate exclamation point on a back-to-back championship run—a night of absolute dominion that signaled a permanent shift in the hierarchy of college football."
-  },
-  {
-    id: "era-24",
-    category: "ERA",
-    title: "1992: Entering the New SEC Era",
-    espnTitle: "Entering the New SEC Era: The 1992 Shift That Shaped Modern Conference Survival",
-    dateTag: "1992 SEASON • SEC EXPANSION ERA",
-    narrative: "When the SEC officially split into divisions in 1992, college football entered a brand-new architectural reality that demanded immediate adaptation. For Georgia, navigating this new competitive landscape meant clashing with surging divisional rivals and adapting to an increasingly fierce national spotlight. Anchored by phenomenal talents like Garrison Hearst and Eric Zeier, the Bulldogs embraced the dawn of this modern era, laying down the competitive roots that would sustain the program through decades of rapid conference evolution."
-  },
-  {
-    id: "era-25",
-    category: "ERA",
-    title: "The Next Frontier: 12-Team Playoff",
-    espnTitle: "The Next Frontier: Navigating the Modern Playoff Battlefield",
-    dateTag: "2024–2025 SEASONS • COLLEGE FOOTBALL PLAYOFF",
-    narrative: "As college football entered its most radical structural evolution with the birth of the expanded 12-team playoff, historical supremacy faced an entirely unprecedented gauntlet. The path to a national championship no longer ran through a single mistake-free November; it demanded surviving a brutal, multi-game postseason tournament against the country's elite. For a program built on depth, relentless culture, and physical durability like Georgia, this new frontier offered the ultimate proving ground to showcase enduring national dominance."
+    dateTag: "CENTURY OF LORE • NEYLAND-FINKS ATHLETIC CENTER",
+    title: "Preserving the Lore in the Archives",
+    espnTitle: "The Paper and the Pigskin: Inside the Vaults Where a Century of Tennessee Football Memory Sleeps",
+    narrative: "Some programs throw away their past as soon as the final whistle blows; others guard their history with deep reverence, locking away the tangible proof of their glory. Deep within the halls of the athletic facilities in Knoxville lies a treasure trove of weathered leather helmets, faded game programs, historical photographs, and memorabilia from decades past. These are not merely dusty museum artifacts; they are the physical anchors of a hundred-year-old story. They remind every modern player who pulls on the orange jersey that they are temporary custodians of a massive, sacred legacy built by the blood and sweat of the thousands who came before them."
   }
 ];
