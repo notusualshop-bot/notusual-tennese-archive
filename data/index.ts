@@ -13,7 +13,7 @@ import { TRA_DATA } from './traData';
 import { RIV_DATA } from './rivData';
 import { MOM_DATA } from './momData';
 
-export const UGA_ARCHIVE_DATA: ArchiveItem[] = [
+export const TENNESSEE_ARCHIVE_DATA: ArchiveItem[] = [
   ...ERA_DATA,
   ...LEG_DATA,
   ...TRA_DATA,
