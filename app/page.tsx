@@ -30,10 +30,11 @@ export default function Home() {
   const currentActualIndex = shuffledIndices[currentIndex];
   const currentItem: ArchiveItem = TENNESSEE_ARCHIVE_DATA[currentActualIndex];
 
-  // 智能提取年份：支持 4 位年份 (18xx/19xx/20xx)、年代标签 (如 2020S)，无年份时优雅兜底显示 "VFL"
+  // 智能提取：优先抓取年份/年代，无年份时提取 dateTag 首个核心词（如 ROAD、FALLL 等）
   const yearMatch = currentItem.dateTag.match(/\b(18\d{2}|19\d{2}|20\d{2})\b/i) || currentItem.title.match(/\b(18\d{2}|19\d{2}|20\d{2})\b/i);
   const decadeMatch = currentItem.dateTag.match(/\b(20\d{0,2}S|19\d{0,2}S)\b/i);
-  const displayYear = yearMatch ? yearMatch[0] : (decadeMatch ? decadeMatch[0] : "VFL");
+  const fallbackTag = currentItem.dateTag.split("•")[0].trim().split(" ")[0] || "VOLS";
+  const displayYear = yearMatch ? yearMatch[0] : (decadeMatch ? decadeMatch[0] : fallbackTag);
 
   // 点击下一篇：在洗牌池中前进；全部播完后自动重新洗牌
   const handleNext = () => {
@@ -112,7 +113,7 @@ export default function Home() {
         <div className="relative bg-white text-stone-950 overflow-hidden border-2 border-stone-900 rounded-none">
           
           {/* 卡片上半部分：黑白图片背景 + 叠印层 */}
-          <div className="relative w-full h-[220px] sm:h-[250px] flex flex-col items-center justify-center overflow-hidden border-b-2 border-stone-900">
+          <div className="relative w-full h-[220px] sm:h-[250px] flex flex-col items-center justify-center overflow-hidden border-b-2 border-stone-900 px-2">
             {/* 纯黑白图片背景 */}
             <div className="absolute inset-0 z-0 grayscale contrast-150 brightness-90">
               <Image
@@ -127,13 +128,13 @@ export default function Home() {
             {/* 压暗遮罩确保文字清晰 */}
             <div className="absolute inset-0 z-1 bg-black/15"></div>
 
-            {/* 内容区：时间线标签与动态年份 */}
-            <div className="relative z-10 flex flex-col items-center text-center px-4 space-y-1">
-              <p className="tracking-[0.15em] uppercase text-[10px] sm:text-xs font-bold text-stone-900 bg-white/85 px-2 py-0.5 border border-stone-900">
+            {/* 内容区：时间线标签与动态年份/主题词 */}
+            <div className="relative z-10 flex flex-col items-center text-center px-2 space-y-1">
+              <p className="tracking-[0.15em] uppercase text-[10px] sm:text-xs font-bold text-stone-900 bg-white/85 px-2 py-0.5 border border-stone-900 max-w-[300px] truncate">
                 {currentItem.dateTag}
               </p>
               <div className="transform -rotate-1 mt-1">
-                <span className="block tracking-tight text-[50px] sm:text-[75px] leading-none text-[#FF8200] vintage-number drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
+                <span className="block tracking-tight text-[36px] sm:text-[52px] leading-none text-[#FF8200] vintage-number drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)] uppercase break-words max-w-[300px]">
                   {displayYear}
                 </span>
               </div>
